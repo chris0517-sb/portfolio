@@ -80,6 +80,7 @@ header{border-bottom:2px solid var(--ink);padding-bottom:var(--sp-6)}
   padding-bottom:1px;
 }
 .lede{margin:0;color:var(--ink-soft);font-size:14.5px;max-width:60ch}
+.lede-top{margin-top:var(--sp-8);font-size:15.5px;color:var(--ink)}
 
 /* ── 數字列 ───────────────────────────── */
 .facts{
@@ -216,8 +217,7 @@ li b{font-weight:700}
     <p class="contact online">線上版（連結可直接點、有作品截圖）：<a href="https://chris0517-sb.github.io/portfolio/">chris0517-sb.github.io/portfolio</a></p>
   </header>
 
-  <p class="pitch">我不是工程師。<br class="webonly">我會的是用 AI <span class="u">把想法做成真的能用、能上架的東西</span>。</p>
-  <p class="lede">下面這些是我這一年陸續做的。我負責決定要做什麼、怎麼設計、做出來對不對；程式、圖和文字由 AI 產出。有想看的，我可以當場打開。</p>
+  <p class="lede lede-top">下面這些是我這一年陸續做的。我負責決定要做什麼、怎麼設計、做出來對不對；程式、圖和文字由 AI 產出。有想看的，我可以當場打開。</p>
 
   <div class="facts">
     <div class="fact"><span class="n">3</span><span class="t">支 App 上架<br>App Store</span></div>
@@ -227,7 +227,34 @@ li b{font-weight:700}
   </div>
 
   <section>
-    <div class="sec-head"><span class="num">01</span><h2>蜂巢 Hive — 一套讓 AI 分工做事的系統</h2></div>
+    <div class="sec-head"><span class="num">01</span><h2>JARVIS — 電腦裡的 AI 助理</h2></div>
+    <p class="sub">Python　│　58 支程式、約 2.1 萬行、30 支測試檔　│　2026 年 6 月開始做，到現在還在加東西</p>
+    <div class="block">
+      <p>我用講的跟它說話，它用聲音回答。桌面上有一層像科幻電影的介面，顯示時間、天氣、它現在在想什麼，還有它講話的字幕。這是我做最久、也改最多次的東西。</p>
+
+      <h3 class="gate">它會做的事</h3>
+      <ul>
+        <li><b>用講的就能使喚：</b>語音辨識在我自己電腦上跑，聲音不用傳出去。它講到一半我可以打斷。</li>
+        <li><b>自己會找事做：</b>按時間收信、看行事曆、每週清一次沒用的檔案，不用我開口。</li>
+        <li><b>記得以前的事：</b>講過的內容會留著，下次接得上，不是每次從零開始。</li>
+        <li><b>手機也叫得動：</b>用 Discord 私訊下指令，人不在電腦前也能使喚，它還能傳圖回來。</li>
+        <li><b>看得到螢幕：</b>需要的時候它能看我畫面上是什麼，再決定怎麼回答。</li>
+        <li><b>知道我在不在：</b>電腦閒置太久它就不開口，不會對著空椅子講話。</li>
+      </ul>
+
+      <h3 class="gate">我特別花時間處理的三件事</h3>
+      <ul>
+        <li><b>不能讓它闖禍。</b>會殺系統程式、刪掉整個資料夾、動到開機設定這類指令，我在程式裡直接擋掉。我誤殺過一次系統程式，後來就改成用程式擋，不是提醒自己小心。</li>
+        <li><b>不能整個停擺。</b>接了好幾家 AI 服務互相備援，一家掛掉自動換下一家接手。</li>
+        <li><b>不能亂花錢。</b>簡單的問題走便宜的模型，難的才升級，常用的答案存起來重複用。</li>
+      </ul>
+
+      <p><b>我做的部分：</b>決定它有哪些能力、哪些事不讓它做、每個功能做完要看到什麼才算好。那 30 支測試檔就是為了這件事——改完跑一輪，確認沒有把別的地方弄壞。</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="num">02</span><h2>蜂巢 Hive — 一套讓 AI 分工做事的系統</h2></div>
     <p class="sub">Node.js ＋ SQLite ＋ Claude Code　│　2026 年 8 月建置並實際營運</p>
     <div class="block">
       <p>跑在我家電腦上的一套系統。裡面有八個「部門」，會自己上班、自己交件、自己互相驗收。需要我決定的事，它在畫面上跳出幾顆按鈕，我點一下就好，不用打字回覆。手機和電腦各有一個介面，開機自動啟動。</p>
@@ -247,20 +274,6 @@ li b{font-weight:700}
 
       <div class="shots"><img src="images/hive-desk.jpg" alt="蜂巢儀表板：各部門的工作紀錄" loading="lazy"></div>
       <p class="shotcap">早上打開電腦看到的畫面：我不在的時候它做了什麼、花了多少錢、哪幾件要我決定。（右側的內部對話面板已裁掉）</p>
-    </div>
-  </section>
-
-  <section>
-    <div class="sec-head"><span class="num">02</span><h2>JARVIS — 電腦裡的 AI 助理</h2></div>
-    <p class="sub">Python　│　58 支程式、約 2.1 萬行、30 支測試檔</p>
-    <div class="block">
-      <p>我叫它、它用聲音回答。桌面上有一層像科幻電影的介面，顯示時間、天氣和它現在在想什麼。它記得以前講過的事，會自己按時間做事（收信、行事曆、每週清理）。</p>
-      <ul>
-        <li><b>危險指令防線：</b>會殺掉系統程式、刪掉整個資料夾這類指令，用程式直接擋掉。我誤殺過一次系統程式，後來就改成用程式擋。</li>
-        <li><b>不會整個停擺：</b>一家 AI 服務掛掉會自動換另一家接手。</li>
-        <li><b>每個功能都有測試：</b>改完跑一輪，確認沒有把別的地方弄壞。</li>
-      </ul>
-      <p><b>我做的部分：</b>決定它有哪些能力、哪些事不讓它做、每個功能做完要看到什麼才算好。</p>
     </div>
   </section>
 
