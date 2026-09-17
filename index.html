@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>楊承翰 作品集</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1E1B17;
+  --ink-soft:#57514A;
+  --ink-faint:#8B837A;
+  --paper:#FAF7F2;
+  --card:#FFFFFF;
+  --main:#14504C;
+  --main-soft:#E3EDEB;
+  --main-line:#BFD6D2;
+  --bead-a:#14504C;
+  --bead-b:#4E8C85;
+  --bead-c:#C9A227;
+  --bead-d:#C4603F;
+  --rule:#E2DBD1;
+  --sp-1:4px; --sp-2:8px; --sp-3:12px; --sp-4:16px; --sp-6:24px; --sp-8:32px; --sp-12:48px;
+}
+*{box-sizing:border-box}
+:where(h1,h2,h3,h4,h5,h6,p,li,blockquote,figcaption,dd,dt,th,td,label,button,a){
+  word-break:keep-all;
+  overflow-wrap:anywhere;
+  text-wrap:pretty;
+}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif;
+  font-size:15px;
+  line-height:1.85;
+  letter-spacing:.01em;
+}
+.sheet{max-width:840px;margin:0 auto;padding:var(--sp-12) var(--sp-4) 72px}
+
+/* ── 記憶點：拼豆格 ───────────────────────── */
+.beadstrip{display:flex;gap:5px;margin-bottom:var(--sp-6)}
+.beadstrip i{
+  width:13px;height:13px;border-radius:4px;display:block;
+  background:var(--main-line);
+}
+.beadstrip i:nth-child(1){background:var(--bead-a)}
+.beadstrip i:nth-child(2){background:var(--bead-b)}
+.beadstrip i:nth-child(4){background:var(--bead-c)}
+.beadstrip i:nth-child(7){background:var(--bead-d)}
+.beadstrip i:nth-child(9){background:var(--bead-b)}
+
+/* ── 頁首 ─────────────────────────────── */
+header{border-bottom:2px solid var(--ink);padding-bottom:var(--sp-6)}
+.name{
+  font-family:"Noto Serif TC",serif;font-weight:700;
+  font-size:clamp(30px,7vw,42px);line-height:1.2;margin:0 0 var(--sp-2);
+  letter-spacing:.06em;
+}
+.meta{color:var(--ink-soft);font-size:14px;margin:0 0 var(--sp-1)}
+.meta b{font-weight:500;color:var(--ink)}
+.contact{font-size:14px;color:var(--ink-soft);margin:0}
+.contact a{color:var(--main);text-decoration:none;border-bottom:1px solid var(--main-line);transition:border-color .2s,background .2s}
+.contact a:hover{border-bottom-color:var(--main);background:var(--main-soft)}
+.contact.online{margin-top:6px;font-size:13px;color:var(--ink-faint)}
+
+.pitch{
+  font-family:"Noto Serif TC",serif;font-weight:600;
+  font-size:clamp(19px,3.6vw,25px);line-height:1.6;
+  margin:var(--sp-8) 0 var(--sp-4);color:var(--main);
+}
+.pitch .u{
+  background:linear-gradient(transparent 62%, #F4E4A8 62%);
+  padding-bottom:1px;
+}
+.lede{margin:0;color:var(--ink-soft);font-size:14.5px;max-width:60ch}
+
+/* ── 數字列 ───────────────────────────── */
+.facts{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:var(--sp-3);
+  margin:var(--sp-8) 0 0;
+}
+.fact{
+  background:var(--card);border:1px solid var(--rule);border-radius:6px;
+  padding:var(--sp-4) var(--sp-4) var(--sp-3);
+}
+.fact .n{
+  font-family:"Noto Serif TC",serif;font-weight:700;color:var(--main);
+  font-size:26px;line-height:1.1;display:block;
+}
+.fact .t{font-size:12.5px;color:var(--ink-soft);line-height:1.55;display:block;margin-top:6px}
+
+/* ── 區塊 ─────────────────────────────── */
+section{margin-top:var(--sp-12)}
+.sec-head{display:flex;align-items:baseline;gap:var(--sp-3);margin:0 0 var(--sp-2)}
+.num{
+  flex:none;width:26px;height:26px;border-radius:7px;background:var(--main);
+  color:#fff;font-size:12px;font-weight:700;line-height:26px;text-align:center;
+  align-self:center;letter-spacing:.02em;
+}
+h2{
+  font-family:"Noto Serif TC",serif;font-weight:700;font-size:21px;
+  margin:0;line-height:1.45;
+}
+.sub{color:var(--ink-faint);font-size:13px;margin:0 0 var(--sp-4) 38px}
+.block{margin-left:38px}
+.block p{margin:0 0 var(--sp-3)}
+
+h3.gate{
+  font-size:15px;font-weight:700;margin:var(--sp-6) 0 var(--sp-2);color:var(--ink);
+  padding-left:10px;border-left:3px solid var(--main);
+}
+
+ul{margin:0 0 var(--sp-3);padding-left:0;list-style:none}
+li{position:relative;padding-left:20px;margin-bottom:7px}
+li::before{
+  content:"";position:absolute;left:0;top:.72em;
+  width:7px;height:7px;border-radius:2px;background:var(--bead-b);
+}
+li b{font-weight:700}
+
+.evidence{
+  background:var(--main-soft);border-radius:6px;padding:var(--sp-4) var(--sp-4) var(--sp-3);
+  margin:var(--sp-4) 0;
+}
+.evidence .cap{
+  font-size:12px;font-weight:700;color:var(--main);letter-spacing:.08em;
+  display:block;margin-bottom:var(--sp-2);
+}
+.evidence ul{margin-bottom:0}
+.evidence li::before{background:var(--main)}
+
+.links{font-size:13.5px;color:var(--ink-soft);margin-top:var(--sp-3)}
+.links a{color:var(--main);text-decoration:none;border-bottom:1px solid var(--main-line);transition:background .2s}
+.links a:hover{background:#fff}
+.tag{
+  display:inline-block;font-size:11.5px;color:var(--ink-soft);
+  border:1px solid var(--rule);background:var(--card);border-radius:999px;
+  padding:1px 9px;margin:0 4px 4px 0;
+}
+
+/* ── 作品截圖（只在網頁版出現） ───────────── */
+.shots{display:grid;gap:10px;margin:var(--sp-4) 0 0}
+.shots + .shots{margin-top:10px}
+.shots.c2{grid-template-columns:1fr 1fr}
+.shots.c3{grid-template-columns:repeat(3,1fr)}
+.shots img{
+  width:100%;height:auto;display:block;background:#fff;
+  border:1px solid var(--rule);border-radius:6px;
+  transition:border-color .2s,box-shadow .2s;
+}
+.shots img:hover{border-color:var(--main-line);box-shadow:0 2px 14px rgba(20,80,76,.12)}
+.shotcap{font-size:12.5px;color:var(--ink-faint);margin:9px 0 0;line-height:1.6}
+
+.dotrule{display:flex;gap:6px;margin:var(--sp-12) 0 0;justify-content:center}
+.dotrule i{width:5px;height:5px;border-radius:2px;background:var(--main-line);display:block}
+
+.note{
+  margin-top:var(--sp-12);border-top:1px solid var(--rule);padding-top:var(--sp-6);
+  font-size:13.5px;color:var(--ink-soft);
+}
+.note b{color:var(--ink)}
+
+@media (max-width:720px){
+  .facts{grid-template-columns:repeat(2,1fr)}
+  .block,.sub{margin-left:0}
+  .sheet{padding:var(--sp-8) var(--sp-4) 56px}
+}
+
+/* ── 列印（A4） ───────────────────────── */
+@media print{
+  @page{size:A4;margin:13mm 13mm}
+  html,body{background:#fff}
+  body{font-size:10.3pt;line-height:1.68}
+  .sheet{max-width:none;padding:0}
+  a{color:var(--main)!important}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  section{margin-top:5mm}
+  li{margin-bottom:2.5px;break-inside:avoid;page-break-inside:avoid}
+  .sec-head,.sub{break-after:avoid;page-break-after:avoid}
+  .block p{margin-bottom:7px}
+  .sub{margin-bottom:8px}
+  .evidence{padding:10px 12px 8px;margin:10px 0}
+  h3.gate{margin:12px 0 6px}
+  .note{margin-top:5.5mm;padding-top:4mm}
+  .fact{padding:10px 12px 9px}
+  .tag{margin-bottom:0}
+  .evidence,.fact,h3.gate+ul,.note{break-inside:avoid;page-break-inside:avoid}
+  h2,h3.gate{break-after:avoid;page-break-after:avoid}
+  .pitch{margin-top:7mm}
+  .facts{margin-top:6mm}
+  .dotrule{display:none}
+  .webonly{display:none!important}
+  .shots,.shotcap{display:none!important}
+}
+</style>
+</head>
+<body>
+<main class="sheet">
+
+  <div class="beadstrip" aria-hidden="true">
+    <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+  </div>
+
+  <header>
+    <h1 class="name">楊承翰</h1>
+    <p class="meta">22 歲　│　<b>淡江大學</b></p>
+    <p class="contact">aa0970322920@gmail.com　│　0970-322-920</p>
+    <p class="contact online">線上版（連結可直接點、有作品截圖）：<a href="https://chris0517-sb.github.io/portfolio/">chris0517-sb.github.io/portfolio</a></p>
+  </header>
+
+  <p class="pitch">我不是工程師，<br class="webonly">但我用 AI <span class="u">把想法做成能上架、能營運的東西</span>。</p>
+  <p class="lede">下面每一件都是我自己一個人做完的。我負責決定要做什麼、怎麼設計、做出來對不對；程式、圖和文字由 AI 產出。所有作品都能當場打開給您看。</p>
+
+  <div class="facts">
+    <div class="fact"><span class="n">3</span><span class="t">支 App 上架<br>App Store</span></div>
+    <div class="fact"><span class="n">694</span><span class="t">次工作，由我做的<br>AI 系統自動完成</span></div>
+    <div class="fact"><span class="n">21</span><span class="t">支影片，從腳本<br>到上傳全自動</span></div>
+    <div class="fact"><span class="n">1</span><span class="t">間百貨櫃位，我合夥<br>經營、數位全包</span></div>
+  </div>
+
+  <section>
+    <div class="sec-head"><span class="num">01</span><h2>蜂巢 Hive — 我自己蓋的一間「AI 公司」</h2></div>
+    <p class="sub">Node.js ＋ SQLite ＋ Claude Code　│　2026 年 8 月建置並實際營運</p>
+    <div class="block">
+      <p>跑在我家電腦上的一套系統。裡面有八個「部門」，會自己上班、自己交件、自己互相驗收。需要我決定的事，它在畫面上跳出幾顆按鈕，我點一下就好，不用打字回覆。手機和電腦各有一個介面，開機自動啟動。</p>
+      <p>八個部門：幕僚長、企劃、社群、設計、工程、品保、財務、分析。每個部門有自己的知識檔、固定的上班時間，以及「哪些事一定要問老闆」的界線。</p>
+
+      <div class="evidence">
+        <span class="cap">實際跑出來的紀錄（2026/8/11 – 9/9）</span>
+        <ul>
+          <li>自動執行 <b>694 次</b>工作、開出 <b>778 張</b>工單</li>
+          <li>產出 <b>81 份 PDF</b>（社群貼文企劃、檔期活動、日報）</li>
+          <li>主動來問我 <b>331 次</b>——需要我決定的事，它不會自己做</li>
+          <li>設有花費上限，錢到上限會自己停：實際停過 <b>67 次</b></li>
+        </ul>
+      </div>
+
+      <p><b>我在這裡負責的：</b>公司要分哪些部門、每個部門什麼時候醒來做事、什麼事必須問我、什麼事它自己決定，還有交出來的東西合不合格。</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="num">02</span><h2>JARVIS — 電腦裡的 AI 助理</h2></div>
+    <p class="sub">Python　│　58 支程式、約 2.1 萬行、30 支測試檔</p>
+    <div class="block">
+      <p>我叫它、它用聲音回答。桌面上有一層像科幻電影的介面，顯示時間、天氣和它現在在想什麼。它記得以前講過的事，會自己按時間做事（收信、行事曆、每週清理）。</p>
+      <ul>
+        <li><b>危險指令防線：</b>會殺掉系統程式、刪掉整個資料夾這類指令，用程式直接擋掉。因為我真的誤殺過一次系統程式，所以改成「用程式擋」，不是「提醒自己小心」。</li>
+        <li><b>不會整個停擺：</b>一家 AI 服務掛掉會自動換另一家接手。</li>
+        <li><b>每個功能都有測試：</b>改完跑一輪，確認沒有把別的地方弄壞。</li>
+      </ul>
+      <p><b>我在這裡負責的：</b>決定它該有哪些能力、哪些事絕對不准它做、每個功能做完要拿什麼證據才算做好。</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="num">03</span><h2>玩豆豆手創館 — 我合夥的百貨櫃位</h2></div>
+    <p class="sub">遠東百貨板橋中山店 8 樓　│　兒童手作（拼豆、動力沙、彩繪、雪花泥）</p>
+    <div class="block">
+      <p>店是合夥的，<b>數位和行銷的部分由我負責，全部自己做</b>：</p>
+      <ul>
+        <li><b>會員 App（櫃檯 iPad）：</b>註冊、查點數、續約、作品寄放登記。已上架 App Store（隱藏上架，只給店裡的平板裝）。</li>
+        <li><b>LINE 官方帳號＋電子會員卡：</b>客人在櫃檯註冊，平板跳出一張專屬 QR，客人掃一下就同時加好友並綁定本人，全程不用打字。</li>
+        <li><b>官網：</b>已上線。</li>
+        <li><b>拼豆原寸底稿工具：</b>客人拿照片來，轉成拼豆圖，印出 1:1 原寸底稿墊在盤子底下照著做。33 色色盤是從店裡真實色卡一顆一顆取色的；每頁附一把 100mm 校正尺，印表機有縮放當場量得出來。<b>店裡現在真的在用。</b></li>
+        <li><b>品牌素材：</b>logo、名片、點數卡、海報、LINE 圖文選單。做成腳本，改個參數就能重出一版，不用每次重畫。</li>
+        <li><b>知名度拓展企劃書：</b>九個章節，含目標、時程、KPI 與風險。</li>
+      </ul>
+      <p class="links">可現場打開：官網 <a href="https://chris0517-sb.github.io/wandoudou-web/">chris0517-sb.github.io/wandoudou-web</a>　│　會員 App <a href="https://apps.apple.com/tw/app/id6788564776">App Store</a></p>
+
+      <div class="shots"><img src="images/wdd-web.jpg" alt="玩豆豆手創館官網首頁" loading="lazy"></div>
+      <div class="shots"><img src="images/wdd-banner.jpg" alt="店內萬用橫幅，吉祥物魔法兔" loading="lazy"></div>
+      <div class="shots c2">
+        <img src="images/wdd-line.jpg" alt="加 LINE 好友海報" loading="lazy">
+        <img src="images/wdd-card.jpg" alt="週年慶小卡" loading="lazy">
+      </div>
+      <p class="shotcap">官網、店內橫幅、加 LINE 好友海報、週年慶小卡——版面、文案、吉祥物設定都是我自己定的，印刷檔也是我出的。</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="num">04</span><h2>AI 內容產線 — 影片和圖，機器自己做</h2></div>
+    <p class="sub">三個 YouTube 頻道（AI 知識／心理學觀念／場景英文）　│　共 21 支影片</p>
+    <div class="block">
+      <p>整條線是自動的：選題 → 寫稿 → 配音 → 剪接 → 上字幕 → 上傳並排定發布時間。</p>
+      <p><b>重點不是「能生」，是「能擋」。</b>AI 亂做出來的東西不能發，所以我把規則寫成程式閘門：</p>
+      <ul>
+        <li>每支片不准跟前一集長得一樣。主視覺、版面、段數、片長、開場、節奏、配樂這七項，至少要有三項不同——不過關直接中止，不會做完才發現。</li>
+        <li>字幕檢查、開頭結尾檢查、上傳前檢查、發錯頻道防呆，任一關沒過就不上傳。</li>
+      </ul>
+      <h3 class="gate">另外兩條線</h3>
+      <ul>
+        <li><b>AI 動漫短劇：</b>用我自己電腦的顯示卡跑圖，配上自動剪接，晚上自己做。</li>
+        <li><b>AI 生圖投稿圖庫：</b>本機跑 ComfyUI ＋ FLUX 生圖，自動挑圖、用文字辨識擋掉畫面上有亂碼字的圖。已有作品通過 Adobe Stock 審核。</li>
+      </ul>
+      <div class="tagrow">
+        <span class="tag">ComfyUI</span><span class="tag">FLUX</span><span class="tag">Stable Diffusion</span><span class="tag">AI 配音（TTS）</span><span class="tag">ffmpeg 自動剪接</span><span class="tag">Playwright 自動上傳</span>
+      </div>
+      <div class="shots c3">
+        <img src="images/manga-1.jpg" alt="AI 動漫短劇封面一" loading="lazy">
+        <img src="images/manga-2.jpg" alt="AI 動漫短劇封面二" loading="lazy">
+        <img src="images/manga-3.jpg" alt="AI 動漫短劇封面三" loading="lazy">
+      </div>
+      <p class="shotcap">AI 動漫短劇的封面。人物、背景、配音、剪接、字幕全部是機器做的，我只定故事方向和過不過關的標準。</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="num">05</span><h2>其他做完的東西</h2></div>
+    <div class="block">
+      <ul>
+        <li><b>Azzeto 投資紀錄 App（iOS，公開上架中）：</b>原生 Swift 開發，2026 年 7 月上架，到現在改版十次。賣點是台灣在地化——海外所得試算用財政部的算法、台股手續費、每一筆交易記下當天匯率。裡面有訂閱制金流（月／年／終身三種方案＋7 天試用），產品落地頁和隱私權政策網頁也都是我自己做的。我沒有 Mac，整個建置、簽章到上架都用雲端機器完成。<span class="links"><a href="https://apps.apple.com/tw/app/id6788245010">App Store 可直接搜尋 Azzeto</a></span></li>
+        <li><b>奧迪奎爾 Odyquill（iOS App，已上架）：</b>把你走過的地方變成一張會慢慢展開的紙雕地圖。<span class="links"><a href="https://apps.apple.com/tw/app/id6795574622">App Store</a></span></li>
+        <li><b>DRIFT 選股工具：</b>點兩下掃過 1,506 檔美股，自動產出一份 HTML 報告。</li>
+        <li><b>收入監控台：</b>七頁的儀表板，把各條收入來源的狀況即時推到畫面上，還會用語音提醒我。</li>
+      </ul>
+      <div class="shots c3">
+        <img src="images/azzeto-1.jpg" alt="Azzeto 資產總覽畫面" loading="lazy">
+        <img src="images/azzeto-3.jpg" alt="Azzeto 持股明細畫面" loading="lazy">
+        <img src="images/azzeto-2.jpg" alt="Azzeto 海外所得試算畫面" loading="lazy">
+      </div>
+      <p class="shotcap">Azzeto 在 App Store 上的實際畫面（畫面裡的數字是展示用的範例資料）。</p>
+    </div>
+  </section>
+
+  <div class="dotrule" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+
+  <section>
+    <div class="sec-head"><span class="num">06</span><h2>我怎麼工作</h2></div>
+    <div class="block">
+      <ul>
+        <li><b>動手前先問清楚。</b>先討論到能寫成規格才開工，不會做完一大堆再讓人挑毛病。</li>
+        <li><b>說「完成」一定要有證據。</b>要看到成品本身——檔案、畫面、線上回應。「程式沒報錯」不算完成。</li>
+        <li><b>犯過的錯寫成規則。</b>同一個錯不犯第二次；能用程式擋的就做成程式，不靠自己記得。</li>
+        <li><b>做不到會直接說。</b>試過確定不可行就停，不會硬花時間和錢。</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="num">07</span><h2>如果我來上班，我可以幫店裡做什麼</h2></div>
+    <p class="sub">以下每一項，我在玩豆豆都實際做過一遍</p>
+    <div class="block">
+      <ul>
+        <li><b>社群內容：</b>一個月的貼文和檔期文案一次排好，照片後製、短影音剪好，拿到就能發。</li>
+        <li><b>店內素材：</b>菜單、海報、點數卡、QR 立牌，做成改參數就重出一版，不用每次找設計。</li>
+        <li><b>讓客人回流：</b>LINE 官方帳號＋電子會員卡，掃一下綁定，到期或生日自動提醒。</li>
+        <li><b>現場工具：</b>會員查詢、寄物登記這類事，做成一台 iPad 就能跑的 App。</li>
+        <li><b>把重複的事自動化：</b>每天固定要做的報表、發文、盤點交給機器，人只負責做決定。</li>
+      </ul>
+    </div>
+  </section>
+
+  <p class="note"><b>誠實說明：</b>以上專案的程式、圖片與文字，主要是我用 AI 工具產出的（Claude Code、ComfyUI、AI 生圖與語音服務等）。我負責的是決定要做什麼、怎麼設計、卡住時怎麼解，以及做出來的東西對不對、能不能交出去。我不是資訊科班出身，也不會宣稱自己能徒手寫出這些程式——我會的是把 AI 用到真的做出成品。</p>
+
+</main>
+</body>
+</html>
